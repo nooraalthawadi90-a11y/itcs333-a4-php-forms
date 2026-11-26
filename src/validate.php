@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 function validate_required(string $v): bool
 {
-    if(trim($v) !== '';){
+    if(trim($v) !== ''){
         return true;
     }
     return false;
