@@ -43,10 +43,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
   elseif(!validate_length($message, 10, 1000)){
     $error .= 'Message is too short or too long (must be between 10 and 1000 characters).<br>';
   }
-}
-if ($error === '') {
+  if ($error === '') {
         header('Location: success.php', true, 303);
         exit;
+        }
 }
 ?>
 <!DOCTYPE html>
